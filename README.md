@@ -1,2 +1,2 @@
-# binar-adha
-untuk latihan GIT
+MAKE NETFLIX KW
+STARTING PROJECT 12-06-2024

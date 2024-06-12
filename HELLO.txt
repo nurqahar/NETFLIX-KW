@@ -1,5 +1,0 @@
-WORLD!
-baris ke 2
-baris ke 3
-tambah baris ke 4 dari web
-tambah baris ke 5 dari web
