@@ -19,6 +19,10 @@ html {
 
 body {
   background-color: #000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .login-section {
@@ -37,7 +41,7 @@ body {
   padding-left: 20px;
 }
 
-.language-picker {
+.language-picker .language-picker-footer {
   position: absolute;
   right: 16.85rem;
   top: 1.75rem;
@@ -70,7 +74,7 @@ body {
   background-color: var(--netflix-hover-red);
 }
 
-.login-body {
+.login-body .login-body-bottom {
   position: absolute;
   top: 36.5%;
   margin-left: auto;
@@ -147,4 +151,158 @@ body {
     rgba(0, 0, 0, 0) 60%,
     rgba(0, 0, 0, 0.8) 100%
   );
+}
+
+.content-section {
+  width: 100%;
+  height: auto;
+  color: var(--netflix-white);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4.5rem 10.5rem;
+  border-top: 0.5rem solid #222;
+  gap: 0.5rem;
+}
+.content-title {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.content-description {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.content-image-container {
+  width: 50%;
+  height: auto;
+  line-height: 0;
+}
+
+.content-image-container > img {
+  width: 100%;
+}
+
+.television {
+  flex-direction: row;
+}
+
+.mobile {
+  flex-direction: row-reverse;
+}
+
+.children {
+  flex-direction: row-reverse;
+}
+
+.faq-section {
+  max-width: 100%;
+  height: auto;
+  border-top: 0.5rem solid #222;
+  padding: 4.5rem 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--netflix-white);
+}
+
+.faq-header {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.question-container {
+  width: 77%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.question-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: var(--question-bg);
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.question-box:hover {
+  cursor: pointer;
+  background-color: #444;
+}
+
+.question {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.plus-icon {
+  height: fit-content;
+  font-size: 2rem;
+}
+
+.login-body-bottom {
+  position: relative;
+  bottom: 4rem;
+  text-align: center;
+  z-index: 1;
+  color: white;
+}
+
+.page-footer {
+  width: 100%;
+  padding: 3.7 10.5rem 3.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-top: 0.5rem solid #222;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.intro-text {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0.75rem 0;
+}
+
+.phone-number,
+.link {
+  text-decoration: underline;
+}
+
+.phone-number:hover {
+  cursor: pointer;
+}
+
+.useful-links {
+  padding: 1.5rem 0;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  column-gap: 0.75rem;
+  row-gap: 0.75rem;
+}
+
+.page-title {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0.75rem 0;
+}
+
+.language-picker-footer {
+  margin: 0.75rem 0;
+  position: relative;
+  right: 0;
+  top: 0;
 }
